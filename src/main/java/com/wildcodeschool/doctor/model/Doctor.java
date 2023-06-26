@@ -28,4 +28,17 @@ public class Doctor {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getCurrentDoctor() {
+        if (this.number == 13) {
+            return this.name + " is the before last doctor";
+        } else if (this.number ==14) {
+            return this.name + " is the current doctor";
+        } else if (this.number ==15) {
+            return this.name + " is the next doctor";
+        } else {
+            return this.name + " is not the current doctor";
+        }
+
+    }
 }
